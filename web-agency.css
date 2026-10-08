@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    background-color: #2b4b80;
+}
+
+header {
+    min-height: 100vh;
+    padding: 30px 60px 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.nav-brand {
+    height: 30px;
+}
+
+.nav-primary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: opacity 0.2s ease;
+}
+
+.nav-item a:hover {
+    opacity: 0.8;
+}
+
+/* Shared CTA Button Styling for Navigation and Hero */
+.cta-btn a,
+a.cta-btn {
+    display: inline-block;
+    background-color: #43c0f6;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-btn a:hover,
+a.cta-btn:hover {
+    background-color: #30b3eb;
+}
+
+/* Hero Section Titles */
+.header-title {
+    font-size: 52px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.header-subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    color: #6b98d4;
+    margin-bottom: 40px;
+}
+
+#button-container {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* Services Cards Section */
+.header-services {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.service {
+    flex: 1;
+    padding: 40px 30px 50px;
+    transition: background-color 0.3s ease;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.service-intro {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #d1e2f7;
+}
+
+.service-link {
+    display: block;
+    margin-top: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Hover Card State */
+.service:hover {
+    background-color: #37baee;
+    cursor: pointer;
+}
+
+.service:hover .service-intro {
+    color: #ffffff;
+}
